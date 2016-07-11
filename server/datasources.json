@@ -3,5 +3,24 @@
     "name": "db",
     "connector": "memory",
     "file": "db.json"
+  },
+  "mail": {
+    "name": "mail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "ganeshtestsendemail@gmail.com",
+          "pass": "ganeshgani12345"
+        }
+      }
+    ]
   }
 }
